@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  color: #ffffff;
+}
+
+body {
+  background: #13131f;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 25px 15%;
+}
+
+header.sticky {
+  padding: 12px 15%;
+  background: #8257e6;
+}
+
+.sticky .navbar a::after {
+  background: "";
+}
+
+.sticky .h-btn {
+  background-color: "";
+  color: #ffffff;
+}
+
+.logo {
+  color: #8257e6;
+  text-align: right;
+  font-family: "Lexend Deca";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 336px;
+}
+
+.navbar {
+  display: flex;
+  gap: 60px;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  color: #fefbfb;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 1rem;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: "";
+  left: 0;
+  bottom: -4px;
+  transition: ease 0.4s;
+}
+
+.navbar a:hover ::after {
+  width: 100%;
+}
+
+#menu-icon {
+  font-size: 32px;
+  color: #fefbfb;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.h-btn {
+  display: inline-flex;
+  padding: 5px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 30px;
+  border: 1px solid #8257e6;
+  color: #fefbfb;
+  text-align: right;
+  font-family: "Lexend Deca";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.h-btn:hover {
+  cursor: pointer;
+}
+
+section {
+  padding: 120px 15%;
+}
+
+.home-text h1 {
+  width: 303px;
+  color: #fefbfb;
+  font-family: "Lexend Deca";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 11px;
+}
+
+.home-text h3 {
+  width: 492px;
+  color: #c4c4c4;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
