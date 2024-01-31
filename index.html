@@ -1,42 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lexend+Deca:wght@400;500;700&display=swap" rel="stylesheet">
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lexend+Deca:wght@400;500;700&display=swap"
       rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">  
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
     <!-- start Header -->
     <header>
-      <a href="/index.html" class="logo">Naped</a>
-      <ul class="navbar">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/html/series.html">Séries</a></li>
-        <li><a href="/html/filmes.html">Filmes</a></li>
-        <li><a href="/html/series.html">Animes</a></li>
-        <li><a href="/html/games.html">Games</a></li>
-      </ul>
-      <a href="#" class="h-btn">Minha conta</a>
+      <nav>
+        <a href="/index.html" class="logo">Naped</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="navbar">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/html/series.html">Séries</a></li>
+          <li><a href="/html/filmes.html">Filmes</a></li>
+          <li><a href="/html/animes.html">Animes</a></li>
+          <li><a href="/html/games.html">Games</a></li>
+          <a href="#" class="h-btn">Minha conta</a>
+        </ul>
+      </nav>
     </header>
 
+    <section class="button">
+      <a href="#" class="h-btn2">Minha conta</a>
+    </section>
 
     <!-- start Home -->
     <section class="home" id="home">
       <div class="home-text">
         <h1>Mundo nerd? Naped!</h1>
-        <h3>O Naped pode ser sua fonte de informações sobre o mundo nerd e outros assuntos relacionados.</h3>
+        <h3>
+          O Naped pode ser sua fonte de informações sobre o mundo nerd e outros
+          assuntos relacionados.
+        </h3>
       </div>
+      <div class="container">
+        <div class="row">
+          <img src="/img/thewalkingdead.png" alt="" srcset="">
+        </div>
+
+        <div class="row1">
+          <img src="/img/atackontitan.png" alt="" srcset="">
+          <img src="/img/lol.png" alt="" srcset="">
+        </div>
+      </div>
+
     </section>
 
+    <!-- start Home -->
+    <section class="scroll-imgs-container">
+      <article class="scroll-img-item">
+        <div class="scroll-img"></div>
+        <button class="img-btn">Animes</button>
+        <div class="scroll-img-texts">
+          <h2 class="scroll-img-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h2>
+          <p class="scroll-img-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros
+            tellus, malesuada et velitin, blandit molestie dolor.
+          </p>
+          <p class="scroll-img-date">00/00/0000</p>
+          <button class="scroll-btn">
+            <a href="#">Ler notícia</a>
+          </button>
+        </div>
+      </article>
 
+      <article class="scroll-img-item">
+        <div class="scroll-img"></div>
+        <button class="img-btn">Filmes</button>
+        <div class="scroll-img-texts">
+          <h2 class="scroll-img-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h2>
+          <p class="scroll-img-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros
+            tellus, malesuada et velitin, blandit molestie dolor.
+          </p>
+          <p class="scroll-img-date">00/00/0000</p>
+          <button class="scroll-btn">
+            <a href="#">Ler notícia</a>
+          </button>
+        </div>
+      </article>
 
-  <script src="index.js"></script>
-</body>
+      <article class="scroll-img-item">
+        <div class="scroll-img"></div>
+        <button class="img-btn">Jogos</button>
+        <div class="scroll-img-texts">
+          <h2 class="scroll-img-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h2>
+          <p class="scroll-img-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros
+            tellus, malesuada et velitin, blandit molestie dolor.
+          </p>
+          <p class="scroll-img-date">00/00/0000</p>
+          <button class="scroll-btn">
+            <a href="#">Ler notícia</a>
+          </button>
+        </div>
+      </article>
+
+      <article class="scroll-img-item">
+        <div class="scroll-img"></div>
+        <button class="img-btn">Filmes</button>
+        <div class="scroll-img-texts">
+          <h2 class="scroll-img-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h2>
+          <p class="scroll-img-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros
+            tellus, malesuada et velitin, blandit molestie dolor.
+          </p>
+          <p class="scroll-img-date">00/00/0000</p>
+          <button class="scroll-btn">
+            <a href="#">Ler notícia</a>
+          </button>
+        </div>
+      </article>
+
+      <article class="scroll-img-item">
+        <div class="scroll-img"></div>
+        <button class="img-btn">Séries</button>
+        <div class="scroll-img-texts">
+          <h2 class="scroll-img-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h2>
+          <p class="scroll-img-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros
+            tellus, malesuada et velitin, blandit molestie dolor.
+          </p>
+          <p class="scroll-img-date">00/00/0000</p>
+          <button class="scroll-btn">
+            <a href="#">Ler notícia</a>
+          </button>
+        </div>
+      </article>
+
+    </section>
+
+    <script src="index.js"></script>
+  </body>
 </html>
