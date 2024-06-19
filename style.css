@@ -6,520 +6,263 @@
   box-sizing: border-box;
 }
 
- .header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    background: #ffe9e8;
-    padding:104px 352px;
-  }
-
-  .header-top {border: 1px solid red;
-    width: 1216px;
-    height: 351px;
-    
-  }
-
-  .header-img {
-    display: flex;
-    justify-content: center;
-    width: 170px;
-    height: 38px;
-    gap: 12px;
-    margin-bottom: 32px;
-  }
-
-  .header-img h2 {
-    font-family: Archivo;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 26.11px;
-    text-align: left;
-    margin-top: 5px;
-  }
-
-  .header-text {
-    width: 590px;
-    height: 192px;
-    margin-bottom: 40px;
-  }
-
-  .header-text h1 {
-    width: 492px;
-    height: 96px;
-    font-family: Archivo;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 48px;
-    text-align: center;
-    margin-bottom: 24px;
-  }
-
-  .header-text h1 span {
-    color: #cd3c32;
-  }
-
-  .header-text p {
-    width: 590px;
-    height: 72px;
-
-    font-family: Archivo;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-  }
-
-  button {
-    width: 238px;
-    padding: 14px 32px;
-    border-radius: 4px;
-    background-color: #cd3c32;
-    text-transform: uppercase;
-    border: none;
-
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18.75px;
-    text-align: center;
-    color: #ffffff;
-  }
-
-  #img-header {
-    width: 500px;
-    height: 339px;
-    gap: 0px;
-    opacity: 0px;
-  }
-
-  .stopwatch {
-    display: flex;
-    flex-direction: column;
-    width: 768px;
-    height: 745px;
-    top: 865.03px;
-    padding: 80px 0px;
-  }
-
-  .stopwatch-title {
-    width: 477px;
-    height: 128px;
-    margin-bottom: 40px;
-  }
-
-  .stopwatch-title h1 {
-    font-family: Archivo;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 43.52px;
-    text-align: center;
-
-    margin-bottom: 24px;
-  }
-
-  .stopwatch-title p {
-    font-family: Archivo;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-  }
-
-  #counter {
-    font-family: Archivo;
-    font-size: 60px;
-    font-weight: 600;
-    line-height: 69.63px;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #cd3c32;
-  }
-
-  #img-counter {
-    width: 478px;
-    height: 307px;
-    gap: 0px;
-    opacity: 0px;
-  }
-
-  .donate {
-    display: flex;
-    flex-direction: column;
-    width: 768px;
-    height: 991px;
-    padding: 80px 0px;
-  }
-  #image {
-    width: 408px;
-    height: 394px;
-    gap: 0px;
-    opacity: 0px;
-
-    margin-bottom: 48px;
-  }
-  .donate-group {
-    display: flex;
-    flex-direction: column;
-    width: 768px;
-    height: 831px;
-
-    margin-bottom: 24px;
-  }
-
-  .donate-title {
-    width: 602px;
-    height: 300px;
-    margin-bottom: 40px;
-  }
-
-  .donate-title h1 {
-    width: 488px;
-    height: 96px;
-    gap: 0px;
-    opacity: 0px;
-
-    font-family: Archivo;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 48px;
-    text-align: center;
-
-    margin-bottom: 24px;
-  }
-
-  .donate-title p {
-    width: 602px;
-    height: 180px;
-    gap: 0px;
-    opacity: 0px;
-
-    font-family: Archivo;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-  }
-
-  #button-donate {
-    width: 238px;
-    height: 49px;
-    padding: 14px 32px 14px 32px;
-    gap: 8px;
-    border-radius: 4px 0px 0px 0px;
-    opacity: 0px;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    width: 768px;
-    height: 206px;
-    padding: 48px 0px;
-    background: #ffe9e8;
-  }
-
-  .footer-contain {
-    display: flex;
-    flex-direction: column;
-    width: 344px;
-    height: 110px;
-  }
-
-  .footer-img {
-    display: flex;
-    justify-content: center;
-    width: 170px;
-    height: 38px;
-    gap: 12px;
-    margin-bottom: 32px;
-  }
-
-  #img-footer {
-    width: 35px;
-    height: 38px;
-    gap: 0px;
-    opacity: 0px;
-  }
-
-  .footer-img h2 {
-    margin-top: 5px;
-    font-family: Archivo;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 26.11px;
-    text-align: left;
-  }
-
-  .social-media {
-    width: 344px;
-    height: 40px;
-  }
-
-@media (max-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 768px;
-    height: 1008px;
-    background: #ffe9e8;
-    gap: 32px;
-    padding: 96px 32px;
-  }
-
-  .header-top {
-    width: 590px;
-    height: 351px;
-    margin-bottom: 126px;
-  }
-
-  .header-img {
-    display: flex;
-    justify-content: center;
-    width: 170px;
-    height: 38px;
-    gap: 12px;
-    margin-bottom: 32px;
-  }
-
-  .header-img h2 {
-    font-family: Archivo;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 26.11px;
-    text-align: left;
-    margin-top: 5px;
-  }
-
-  .header-text {
-    width: 590px;
-    height: 192px;
-    margin-bottom: 40px;
-  }
-
-  .header-text h1 {
-    width: 492px;
-    height: 96px;
-    font-family: Archivo;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 48px;
-    text-align: center;
-    margin-bottom: 24px;
-  }
-
-  .header-text h1 span {
-    color: #cd3c32;
-  }
-
-  .header-text p {
-    width: 590px;
-    height: 72px;
-
-    font-family: Archivo;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-  }
-
-  button {
-    width: 238px;
-    padding: 14px 32px;
-    border-radius: 4px;
-    background-color: #cd3c32;
-    text-transform: uppercase;
-    border: none;
-
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18.75px;
-    text-align: center;
-    color: #ffffff;
-  }
-
-  #img-header {
-    width: 500px;
-    height: 339px;
-    gap: 0px;
-    opacity: 0px;
-  }
-
-  .stopwatch {
-    display: flex;
-    flex-direction: column;
-    width: 768px;
-    height: 745px;
-    top: 865.03px;
-    padding: 80px 0px;
-  }
-
-  .stopwatch-title {
-    width: 477px;
-    height: 128px;
-    margin-bottom: 40px;
-  }
-
-  .stopwatch-title h1 {
-    font-family: Archivo;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 43.52px;
-    text-align: center;
-
-    margin-bottom: 24px;
-  }
-
-  .stopwatch-title p {
-    font-family: Archivo;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-  }
-
-  #counter {
-    font-family: Archivo;
-    font-size: 60px;
-    font-weight: 600;
-    line-height: 69.63px;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #cd3c32;
-  }
-
-  #img-counter {
-    width: 478px;
-    height: 307px;
-    gap: 0px;
-    opacity: 0px;
-  }
-
-  .donate {
-    display: flex;
-    flex-direction: column;
-    width: 768px;
-    height: 991px;
-    padding: 80px 0px;
-  }
-  #image {
-    width: 408px;
-    height: 394px;
-    gap: 0px;
-    opacity: 0px;
-
-    margin-bottom: 48px;
-  }
-  .donate-group {
-    display: flex;
-    flex-direction: column;
-    width: 768px;
-    height: 831px;
-
-    margin-bottom: 24px;
-  }
-
-  .donate-title {
-    width: 602px;
-    height: 300px;
-    margin-bottom: 40px;
-  }
-
-  .donate-title h1 {
-    width: 488px;
-    height: 96px;
-    gap: 0px;
-    opacity: 0px;
-
-    font-family: Archivo;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 48px;
-    text-align: center;
-
-    margin-bottom: 24px;
-  }
-
-  .donate-title p {
-    width: 602px;
-    height: 180px;
-    gap: 0px;
-    opacity: 0px;
-
-    font-family: Archivo;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-  }
-
-  #button-donate {
-    width: 238px;
-    height: 49px;
-    padding: 14px 32px 14px 32px;
-    gap: 8px;
-    border-radius: 4px 0px 0px 0px;
-    opacity: 0px;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    width: 768px;
-    height: 206px;
-    padding: 48px 0px;
-    background: #ffe9e8;
-  }
-
-  .footer-contain {
-    display: flex;
-    flex-direction: column;
-    width: 344px;
-    height: 110px;
-  }
-
-  .footer-img {
-    display: flex;
-    justify-content: center;
-    width: 170px;
-    height: 38px;
-    gap: 12px;
-    margin-bottom: 32px;
-  }
-
-  #img-footer {
-    width: 35px;
-    height: 38px;
-    gap: 0px;
-    opacity: 0px;
-  }
-
-  .footer-img h2 {
-    margin-top: 5px;
-    font-family: Archivo;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 26.11px;
-    text-align: left;
-  }
-
-  .social-media {
-    width: 344px;
-    height: 40px;
-  }
+.header {
+  background: #ffe9e8;
+  align-items: center;
+  padding: 140px;
 }
 
-@media (max-width: 320px) {
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 351px;
+  padding: 0;
+  margin: 0;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid red;
+  width: 590px;
+  height: 351px;
+}
+
+.header-logo {
+  border: 1px solid red;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.header-logo h2 {
+  font-family: Archivo;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26.11px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.header-text h1 {
+  font-family: Archivo;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+}
+
+.header-text h1 span {
+  color: #cd3c32;
+}
+
+.header-text p {
+  width: 590px;
+  height: 72px;
+  font-family: Archivo;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+
+button {
+  width: 238px;
+  padding: 14px 32px;
+  border-radius: 4px;
+  background-color: #cd3c32;
+  text-transform: uppercase;
+  border: none;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#img-header {
+  width: 500px;
+  height: 339px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  width: 768px;
+  height: 745px;
+  top: 865.03px;
+  padding: 80px 0px;
+}
+
+.stopwatch-title {
+  width: 477px;
+  height: 128px;
+  margin-bottom: 40px;
+}
+
+.stopwatch-title h1 {
+  font-family: Archivo;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 43.52px;
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+.stopwatch-title p {
+  font-family: Archivo;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+#counter {
+  font-family: Archivo;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 69.63px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #cd3c32;
+}
+
+#img-counter {
+  width: 478px;
+  height: 307px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.donate {
+  display: flex;
+  flex-direction: column;
+  width: 768px;
+  height: 991px;
+  padding: 80px 0px;
+}
+#image {
+  width: 408px;
+  height: 394px;
+  gap: 0px;
+  opacity: 0px;
+
+  margin-bottom: 48px;
+}
+.donate-group {
+  display: flex;
+  flex-direction: column;
+  width: 768px;
+  height: 831px;
+
+  margin-bottom: 24px;
+}
+
+.donate-title {
+  width: 602px;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.donate-title h1 {
+  width: 488px;
+  height: 96px;
+  gap: 0px;
+  opacity: 0px;
+
+  font-family: Archivo;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+.donate-title p {
+  width: 602px;
+  height: 180px;
+  gap: 0px;
+  opacity: 0px;
+
+  font-family: Archivo;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+
+#button-donate {
+  width: 238px;
+  height: 49px;
+  padding: 14px 32px 14px 32px;
+  gap: 8px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 768px;
+  height: 206px;
+  padding: 48px 0px;
+  background: #ffe9e8;
+}
+
+.footer-contain {
+  display: flex;
+  flex-direction: column;
+  width: 344px;
+  height: 110px;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 38px;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+#img-footer {
+  width: 35px;
+  height: 38px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.footer-img h2 {
+  margin-top: 5px;
+  font-family: Archivo;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26.11px;
+  text-align: left;
+}
+
+.social-media {
+  width: 344px;
+  height: 40px;
+}
+
+
+
+@media (min-width: 320px) {
   .header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 375px;
-    height: 858px;
+    width:100%;
+    height: 100%;
     background: #ffe9e8;
     gap: 32px;
     padding: 96px 24px;
@@ -529,7 +272,7 @@
     margin-bottom: 64px;
   }
 
-  .header-img {
+  .header-logo {
     display: flex;
     justify-content: center;
     width: 170px;
@@ -538,7 +281,7 @@
     margin-bottom: 32px;
   }
 
-  .header-img h2 {
+  .header-logo h2 {
     font-family: Archivo;
     font-size: 24px;
     font-weight: 500;
