@@ -139,7 +139,6 @@ button {
   opacity: 0px;
 }
 
-
 .donate-group {
   display: flex;
   justify-content: space-between;
@@ -147,13 +146,12 @@ button {
   max-width: 1200px;
   height: 554px;
 }
-.donate-img{
+.donate-img {
   display: flex;
   width: 408px;
   height: 394px;
   opacity: 0px;
   margin: 82px 0;
-
 }
 .donate-title {
   width: 602px;
@@ -173,7 +171,6 @@ button {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
-  
 }
 
 .donate-title p {
@@ -189,21 +186,21 @@ button {
   line-height: 36px;
 }
 
-.footer { 
+.footer {
   display: flex;
   width: 100% !important;
   max-width: 1920px !important;
   height: 80px;
-  padding: 20px 0 !important;
+  padding: 20px 350px;
   background: #ffe9e8;
 }
 
 .footer-contain {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 1200px;
   height: 40px;
-  
 }
 
 .footer-logo {
@@ -226,32 +223,34 @@ button {
 .social-media {
   width: 344px;
   height: 40px;
-  
+
   margin-right: 0;
 }
 
-/* @media (min-width: 320px) {
+@media (max-width: 475px) {
   .header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width:100%;
-    height: 100%;
-    background: #ffe9e8;
-    gap: 32px;
     padding: 96px 24px;
   }
 
   .header-top {
-    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 327px;
+    height: 670px;
+  }
+
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 327px;
+    height: 289px;
   }
 
   .header-logo {
-    display: flex;
-    justify-content: center;
     width: 170px;
     height: 38px;
-    gap: 12px;
     margin-bottom: 32px;
   }
 
@@ -259,20 +258,18 @@ button {
     font-family: Archivo;
     font-size: 24px;
     font-weight: 500;
-    line-height: 26.11px;
-    text-align: left;
+    line-height: 27px;
     margin-top: 5px;
   }
 
   .header-text h1 {
     width: 327px;
     height: 114px;
-    gap: 0px;
 
     font-family: Archivo;
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 600;
-    line-height: 38.4px;
+    line-height: 39px;
     text-align: center;
     margin-bottom: 24px;
   }
@@ -282,6 +279,9 @@ button {
   }
 
   .header-text p {
+    width: 327px;
+    height: 81px;
+
     font-family: Archivo;
     font-size: 18px;
     font-weight: 400;
@@ -306,12 +306,17 @@ button {
     color: #ffffff;
   }
 
+  #img-header {
+    width: 327px;
+    height: 222px;
+  }
+
   .stopwatch {
     display: flex;
     flex-direction: column;
     width: 375px;
-    height: 584.38px;
-    top: 865.03px;
+    height: 585px;
+    top: 866px;
     padding: 80px 24px;
   }
 
@@ -319,10 +324,12 @@ button {
     width: 327px;
     height: 132px;
     gap: 16px;
-    opacity: 0px;
   }
 
   .stopwatch-title h1 {
+    width: 225px;
+    height: 35px;
+
     font-family: Archivo;
     font-size: 32px;
     font-weight: 600;
@@ -333,6 +340,9 @@ button {
   }
 
   .stopwatch-title p {
+    width: 327px;
+    height: 81px;
+
     font-family: Archivo;
     font-size: 18px;
     font-weight: 400;
@@ -341,14 +351,21 @@ button {
   }
 
   #counter {
-    font-size: 24px;
-    margin-top: 50px;
+    width: 327px;
+    height: 35px;
+
     font-family: Archivo;
-    font-size: 25px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 34.82px;
     text-align: center;
+
     color: #cd3c32;
+  }
+
+  #img-counter {
+    width: 327px;
+    height: 209px;
   }
 
   .donate {
@@ -358,13 +375,19 @@ button {
     height: 833px;
     padding: 80px 24px;
   }
-  #image {
-    margin-bottom: 48px;
-  }
+
   .donate-group {
     display: flex;
     flex-direction: column;
     width: 327px;
+    height: 672px;
+    align-items: center;
+  }
+
+  .donate-img {
+    width: 214px;
+    height: 209px;    
+    margin: 0 auto; 
   }
 
   .donate-title {
@@ -399,6 +422,7 @@ button {
   .footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 375px;
     height: 220px;
     gap: 32px;
@@ -406,30 +430,32 @@ button {
     background: #ffe9e8;
   }
 
-  .footer-contain {
+  .footer-container {
     display: flex;
     flex-direction: column;
     width: 327px;
     height: 110px;
     gap: 32px;
+    margin-top: 48px;
   }
 
-  .footer-img {
-    display: flex;
-    justify-content: center;
+  .footer-logo {
     width: 170px;
     height: 38px;
     gap: 12px;
-    margin-bottom: 32px;
+    margin: 0 83px 0;
   }
 
-  .footer-img h2 {
+  
+  .footer-logo h2 {
+    width: 160px;
+    height: 38px;
     margin-top: 5px;
     font-family: Archivo;
     font-size: 24px;
     font-weight: 500;
     line-height: 26.11px;
-    text-align: left;
+    margin: 0 auto;
   }
 
   .social-media {
@@ -437,4 +463,4 @@ button {
     gap: 32px;
     opacity: 0px;
   }
-} */
+}
