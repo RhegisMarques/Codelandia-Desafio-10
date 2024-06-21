@@ -68,6 +68,7 @@
 
 button {
   width: 238px;
+  height: 49px;
   padding: 14px 32px;
   border-radius: 4px;
   background-color: #cd3c32;
@@ -216,6 +217,8 @@ button {
 
 @media (max-width: 475px) {
   .header {
+    width:100%;
+    background: #ffe9e8;
     padding: 96px 24px;
   }
 
@@ -254,7 +257,6 @@ button {
     height: 114px;
 
     font-family: Archivo;
-    font-size: 34px;
     font-weight: 600;
     line-height: 39px;
     text-align: center;
@@ -279,6 +281,7 @@ button {
 
   button {
     width: 327px;
+    height: 51px;
     padding: 16px 32px;
     border-radius: 4px;
     background-color: #cd3c32;
@@ -358,7 +361,7 @@ button {
   .donate {
     display: flex;
     flex-direction: column;
-    width: 375px;
+    width: 100%;
     height: 833px;
     padding: 80px 24px;
   }
@@ -374,13 +377,13 @@ button {
   #img-donate {
     width: 214px;
     height: 207px;
-    margin-top: 0 ;
+    margin-top: 0;
   }
 
   .donate-title {
     width: 327px;
     height: 327px;
-    margin-top: 0 ;
+    margin-top: 0;
     margin-bottom: 80px;
   }
 
@@ -411,7 +414,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 375px;
+    width: 100%;
     height: 220px;
     gap: 32px;
     padding: 48px 24px 64px;
@@ -433,13 +436,12 @@ button {
     margin: 0 83px 0;
   }
 
-  .social-media  {
+  .social-media {
     display: flex;
     justify-content: space-between;
     width: 327px;
     height: 40px;
   }
-
 
   .social-media img {
     width: 40px;

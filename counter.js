@@ -13,7 +13,7 @@ function updateCounter() {
   minutes %= 60;
   seconds %= 60;
 
-  document.getElementById("counter").innerHTML = days + "D - " + hours + "h : " + minutes + "m : " + seconds + "s";
+  document.getElementById("counter").innerHTML = days + "D : " + hours + "h : " + minutes + "m : " + seconds + "s";
 }
 
 // Chamada inicial da função
