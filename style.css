@@ -195,20 +195,19 @@ button {
   background: #ffe9e8;
 }
 
-.footer-container {border: 1px solid red;
+.footer-container {
   display: flex;
-  justify-content: space-between;
   width: 1200px;
   height: 40px;
-  margin: 0 auto;
+  gap: 720px;
 }
 
-.footer-logo {
+.footer-logo {display: flex;
   width: 170px;
   height: 38px;
 }
 
-.social-media {
+.social-media {display: flex;
   height: 40px;
   cursor: pointer;
 }
