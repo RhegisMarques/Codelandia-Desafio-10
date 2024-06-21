@@ -146,7 +146,7 @@ button {
   max-width: 1200px;
   height: 554px;
 }
-.donate-img {
+#img-donate {
   display: flex;
   width: 408px;
   height: 394px;
@@ -202,12 +202,14 @@ button {
   gap: 720px;
 }
 
-.footer-logo {display: flex;
+.footer-logo {
+  display: flex;
   width: 170px;
   height: 38px;
 }
 
-.social-media {display: flex;
+.social-media {
+  display: flex;
   height: 40px;
   cursor: pointer;
 }
@@ -369,16 +371,17 @@ button {
     align-items: center;
   }
 
-  .donate-img {
+  #img-donate {
     width: 214px;
-    height: 209px;    
-    margin: 0 auto; 
+    height: 207px;
+    margin-top: 0 ;
   }
 
   .donate-title {
     width: 327px;
     height: 327px;
-    margin-bottom: 40px;
+    margin-top: 0 ;
+    margin-bottom: 80px;
   }
 
   .donate-title h1 {
@@ -421,7 +424,6 @@ button {
     width: 327px;
     height: 110px;
     gap: 32px;
-    margin-top: 48px;
   }
 
   .footer-logo {
@@ -431,10 +433,17 @@ button {
     margin: 0 83px 0;
   }
 
-  
-    .social-media {
+  .social-media  {
+    display: flex;
+    justify-content: space-between;
     width: 327px;
-    gap: 32px;
-    
+    height: 40px;
+  }
+
+
+  .social-media img {
+    width: 40px;
+    height: 40px;
+    gap: 10px;
   }
 }
