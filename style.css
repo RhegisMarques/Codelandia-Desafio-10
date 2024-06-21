@@ -195,36 +195,22 @@ button {
   background: #ffe9e8;
 }
 
-.footer-contain {
+.footer-container {border: 1px solid red;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 1200px;
   height: 40px;
+  margin: 0 auto;
 }
 
 .footer-logo {
-  display: flex;
   width: 170px;
   height: 38px;
-  gap: 12px;
-  margin-left: 0;
-}
-
-.footer-img h2 {
-  margin-top: 5px;
-  font-family: Archivo;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 26.11px;
-  text-align: left;
 }
 
 .social-media {
-  width: 344px;
   height: 40px;
-
-  margin-right: 0;
+  cursor: pointer;
 }
 
 @media (max-width: 475px) {
@@ -447,20 +433,9 @@ button {
   }
 
   
-  .footer-logo h2 {
-    width: 160px;
-    height: 38px;
-    margin-top: 5px;
-    font-family: Archivo;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 26.11px;
-    margin: 0 auto;
-  }
-
-  .social-media {
+    .social-media {
     width: 327px;
     gap: 32px;
-    opacity: 0px;
+    
   }
 }
