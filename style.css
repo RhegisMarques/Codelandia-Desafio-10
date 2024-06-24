@@ -216,8 +216,9 @@ button {
 }
 
 @media (max-width: 475px) {
+
   .header {
-    width:100%;
+    width:375px;
     background: #ffe9e8;
     padding: 96px 24px;
   }
@@ -226,7 +227,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 327px;
+    width: 100%;
     height: 670px;
   }
 
@@ -410,14 +411,15 @@ button {
     text-align: center;
   }
 
-  .footer {
+  .footer {   
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    
+    justify-content: space-between; 
+    width:375px;
     height: 220px;
     gap: 32px;
-    padding: 48px 24px 64px;
+    padding: 48px 24px;
     background: #ffe9e8;
   }
 
@@ -433,12 +435,10 @@ button {
     width: 170px;
     height: 38px;
     gap: 12px;
-    margin: 0 83px 0;
   }
 
   .social-media {
     display: flex;
-    justify-content: space-between;
     width: 327px;
     height: 40px;
   }
