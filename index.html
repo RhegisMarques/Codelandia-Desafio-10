@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Document</title>
   </head>
   <body>
-    <section class="header">
+    
+    <header class="header">
       <div class="header-top">
         <div class="header-group">
           <div class="header-text">
             <div class="header-logo">
               <img src="/public/img/logo.png" />
+              <h2>Feliz Natal</h2>
             </div>
             <h1>Uma <span>plataforma de doação</span> para espalhar alegria</h1>
             <p>
@@ -20,50 +30,49 @@
               e compartilhe a alegria do Natal.
             </p>
           </div>
-          <button type="button">Fazer uma doação</button>
+          <button id="header-btn"type="button">Fazer uma doação</button>
         </div>
         <img id="img-header" src="/public/img/imagem.png" alt="" />
       </div>
-    </section>
+    </header>
 
     <section class="stopwatch">
-      <div class="stopwatch-top">
-      <div class="stopwatch-title">
-        <h1>Tempo limitado</h1>
-        <p>
-          Nessas festas de fim de ano mande um presente para a pessoa amada e
-          compartilhe a alegria do Natal.
-        </p>
-      </div>
-      <div id="counter"></div>
-      <img id="img-counter" src="/public/img/illustration-1.png" />
-      </div>
+        <div class="stopwatch-title">
+          <h1>Tempo limitado</h1>
+          <p>
+            Nessas festas de fim de ano mande um presente para a pessoa amada e
+            compartilhe a alegria do Natal.
+          </p>
+        </div>
+        <div id="counter"></div>
+        <img id="img-counter" src="/public/img/illustration-1.png" />      
     </section>
 
     <section class="donate">
       <div class="donate-top">
-      <div class="donate-img">
-        <img id="img-donate" src="/public/img/illustration.png" alt="" />
-      </div>
-      <div class="donate-group">
-        <div class="donate-text">
-          <h1>Conectando generosidade ao redor do mundos</h1>
-          <p>
-            Celebre a magia do Natal de uma maneira especial! Descubra a
-            plataforma que permite a doação de presentes significativos para
-            aqueles que mais precisam. Faça parte do movimento e compartilhe o
-            verdadeiro espírito da generosidade.
-          </p>          
+        <div class="donate-img">
+          <img id="img-donate" src="/public/img/illustration.png" alt="" />
         </div>
-        <button class="donate-btn" type="button">Fazer uma doação</button>
-      </div>
+        <div class="donate-group">
+          <div class="donate-text">
+            <h1>Conectando generosidade ao redor do mundos</h1>
+            <p>
+              Celebre a magia do Natal de uma maneira especial! Descubra a
+              plataforma que permite a doação de presentes significativos para
+              aqueles que mais precisam. Faça parte do movimento e compartilhe o
+              verdadeiro espírito da generosidade.
+            </p>
+          </div>
+          <button class="donate-btn" type="button">Fazer uma doação</button>
+        </div>
       </div>
     </section>
 
-    <section class="footer">
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-logo">
           <img src="/public/img/logo.png" alt="" />
+          <h2>Feliz Natal</h2>
         </div>
         <div class="social-media">
           <img src="/public/img/logo-twitter.png" alt="" />
@@ -73,7 +82,7 @@
           <img src="/public/img/logo-google.png" alt="" />
         </div>
       </div>
-    </section>
+    </footer>
 
     <script src="counter.js"></script>
   </body>
