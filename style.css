@@ -241,12 +241,25 @@ button {
   display: flex;
   height: 40px;
   cursor: pointer;
+  gap: 36px;
+  
 }
+
+.social-media img {
+    width: 40px;
+    height: 40px;    
+    padding: 2px 1px 2px 1px;    
+    border-radius: 999px ;
+    opacity: 0px;
+    background: #FFD5D3;
+
+  }
 
 @media (max-width: 768px) {
   .header {
-    display: flex;    
+    display: flex;
     width: 100%;
+    padding: 0;
   }
 
   .header-top {
@@ -325,6 +338,7 @@ button {
     display: flex;
     justify-content: center;
     width: 100%;
+    
   }
 
   .stopwatch-top {
@@ -419,7 +433,6 @@ button {
     height: 394px;
   }
 
-  
   .donate-group {
     display: flex;
     flex-direction: column;
@@ -430,10 +443,13 @@ button {
   }
 
   .donate-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 602px;
     height: 300px;
     gap: 24px;
-    margin-top: 0;
+    margin-bottom: 40px;
   }
 
   .donate-text h1 {
@@ -445,8 +461,6 @@ button {
     font-weight: 600;
     line-height: 48px;
     text-align: center;
-
-    margin-bottom: 24px;
   }
 
   .donate-text p {
@@ -499,16 +513,23 @@ button {
 
 @media (max-width: 475px) {
   .header {
-    width: 375px;
-    padding: 96px 24px;
+    width: 100%;
+    height: 857px;
+    padding: 0;
+    gap: 10px;
   }
 
   .header-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 670px;
+    width: 375px;
+    height: 857px;
+    padding: 96px 24px;
+    gap: 64px;
+  }
+
+  .header-group {
+    width: 327px;
+    height: 380px;
+    gap: 40px;
   }
 
   .header-text {
@@ -522,7 +543,6 @@ button {
   .header-logo {
     width: 170px;
     height: 38px;
-    margin-bottom: 32px;
   }
 
   .header-logo h2 {
@@ -561,22 +581,31 @@ button {
     height: 222px;
   }
 
-  .stopwatch {
+  .stopwatch {    
+    display: flex;
+    width: 100%;
+    height: 585px;
+    padding: 0;
+    gap: 24px;
+  }
+
+  .stopwatch-top {
     display: flex;
     flex-direction: column;
-    width: 375px;
-    height: 585px;
-    top: 866px;
-    padding: 80px 24px;
+    align-items: center;
   }
 
   .stopwatch-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 327px;
     height: 132px;
     gap: 16px;
   }
 
   .stopwatch-title h1 {
+    display: flex;
     width: 225px;
     height: 35px;
 
@@ -621,12 +650,16 @@ button {
   .donate {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 833px;
     padding: 80px 0;
   }
 
   .donate-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 375px;
     height: 672.6px;
     padding: 0px 24px;
@@ -636,29 +669,27 @@ button {
   #img-donate {
     width: 214px;
     height: 207px;
-    margin-top: 0;
-    margin-bottom: 48px;
   }
 
   .donate-group {
     display: flex;
     flex-direction: column;
-    width: 327px;
-    height: 672px;
     align-items: center;
-    gap: 48px;
-    margin-bottom: 91px;
+    width: 327px;
+    height: 418px;
+    gap: 40px;
   }
 
-  .donate-title {
+  .donate-text {
     width: 327px;
     height: 327px;
     gap: 24px;
   }
 
-  .donate-title h1 {
+  .donate-text h1 {
     width: 327px;
     height: 114px;
+
     font-family: Archivo;
     font-size: 32px;
     font-weight: 600;
@@ -666,11 +697,10 @@ button {
     text-align: center;
   }
 
-  .donate-title p {
+  .donate-text p {
     width: 327px;
     height: 189px;
-    gap: 0px;
-    opacity: 0px;
+
     font-family: Archivo;
     font-size: 18px;
     font-weight: 400;
@@ -683,7 +713,7 @@ button {
     flex-direction: column;
 
     justify-content: space-between;
-    width: 375px;
+    width:100%;
     height: 220px;
     gap: 32px;
     padding: 48px 24px;
@@ -712,7 +742,12 @@ button {
 
   .social-media img {
     width: 40px;
-    height: 40px;
+    height: 40px;    
+    padding: 2px 1px 2px 1px;
     gap: 10px;
+    border-radius: 999px ;
+    opacity: 0px;
+    background: #FFD5D3;
+
   }
 }
