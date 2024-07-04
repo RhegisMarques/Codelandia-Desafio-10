@@ -1,20 +1,13 @@
 .header {
-  width: 100%;
-  max-width: 375px;
-  height: 854px;
-  gap: 10px;
-
-  background: #ffe9e8;
-}
-
-.header-top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 370px;
-  height: 858px;
+  width: 100%;
+  max-width: 375px;
   padding: 96px 24px;
   gap: 64px;
+
+  background: #ffe9e8;
 }
 
 .header-group {
@@ -22,24 +15,12 @@
   flex-direction: column;
   align-items: center;
   max-width: 327px;
-  height: 380px;
   gap: 40px;
-}
-
-.header-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 327px;
-  height: 289px;
-  gap: 32px;
 }
 
 .header-logo {
   display: flex;
   flex-direction: row;
-  width: 160px;
-  height: 38px;
   gap: 12px;
 }
 
@@ -49,46 +30,36 @@
 }
 
 .header-logo h2 {
-  width: 113px;
-  height: 26px;
   font-size: 24px;
   font-weight: 500;
   line-height: 26.11px;
   text-align: left;
 }
 
-.header-text h1 {
-  width: 327px;
-  height: 114px;
-
-  font-family: Archivo;
+.header-group h1 {
   font-size: 38px;
   font-weight: 600;
   line-height: 38.4px;
   text-align: center;
 }
 
-.header-text p {
-  width: 327px;
-  height: 81px;
+.header-group p {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   text-align: center;
 }
 
-.header-text span {
+.header-group span {
   color: #cd3c32;
 }
 
 button {
   width: 327px;
-  height: 51px;
   padding: 16px 32px;
   gap: 8px;
   border-radius: 4px;
   border-style: none;
-
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
@@ -96,7 +67,6 @@ button {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-
   background: #cd3c32;
 }
 
@@ -105,13 +75,14 @@ button {
   height: 222px;
 }
 
+/* ================End Header=============*/
+
 .stopwatch {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 375px;
-  height: 585px;
   padding: 80px 24px;
   gap: 24px;
 }
@@ -121,14 +92,10 @@ button {
   flex-direction: column;
   align-items: center;
   width: 327px;
-  height: 132px;
   gap: 16px;
 }
 
 .stopwatch-title h1 {
-  width: 225px;
-  height: 35px;
-  font-family: Archivo;
   font-size: 32px;
   font-weight: 600;
   line-height: 34.82px;
@@ -136,10 +103,6 @@ button {
 }
 
 .stopwatch-title p {
-  width: 327px;
-  height: 81px;
-
-  font-family: Archivo;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -147,10 +110,6 @@ button {
 }
 
 #counter {
-  width: 327px;
-  height: 35px;
-
-  font-family: Archivo;
   font-size: 32px;
   font-weight: 600;
   line-height: 34.82px;
@@ -164,25 +123,17 @@ button {
   height: 209px;
 }
 
+/* ================End section stopwatch=============*/
+
 .donate {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 375px;
-  height: 833px;
-  padding: 80px 0;
-}
-
-.donate-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 375px;
-  height: 673px;
-  padding: 0px 24px;
+  padding: 80px 24px;
   gap: 48px;
+  border-top: 1px solid #dbdbdb;
 }
 
 #img-donate {
@@ -199,15 +150,7 @@ button {
   gap: 40px;
 }
 
-.donate-text {
-  display: flex;
-  flex-direction: column;
-  width: 327px;
-  height: 327px;
-  gap: 24px;
-}
-
-.donate-text h1 {
+.donate-group h1 {
   width: 327px;
   height: 114px;
 
@@ -218,7 +161,7 @@ button {
   text-align: center;
 }
 
-.donate-text p {
+.donate-group p {
   width: 327px;
   height: 189px;
 
@@ -229,28 +172,20 @@ button {
   text-align: center;
 }
 
+/* ================End Section donate=============*/
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 375px;
-  height: 220px;
   gap: 32px;
   padding: 48px 24px;
   background: #ffe9e8;
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;  
-  align-items: center;
-  width: 327px;
-  height: 110px;
-  gap: 32px;
-}
-
-.footer-logo {
+.footer-group {
   display: flex;
   flex-direction: row;
   width: 160px;
@@ -258,12 +193,12 @@ footer {
   gap: 12px;
 }
 
-.footer-logo img {
+.footer-group img {
   width: 35px;
   height: 38px;
 }
 
-.footer-logo h2 {
+.footer-group h2 {
   width: 113px;
   height: 26px;
   font-family: Archivo;
@@ -275,10 +210,9 @@ footer {
 
 .social-media {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 327px;
   height: 40px;
-
 }
 
 .social-media img {
@@ -289,5 +223,141 @@ footer {
   background: #ffd5d3;
 }
 
+/* ================End Mobile=============*/
 
-@media (min-width:             
+@media (min-width: 768px) {
+  .header {
+    width: 100%;
+    max-width: 768px;
+    padding: 96px 90px;
+    gap: 126px;
+  }
+
+  .header-group {
+    width: 100%;
+    max-width: 568px;
+  }
+
+  .header-group h1 {
+    font-family: Archivo;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .header-group p {
+    font-family: Archivo;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  button {
+    width: 238px;
+    gap: 8px;
+  }
+
+  #img-header {
+    width: 500px;
+    height: 339px;
+  }
+
+  /* ================End Header =============*/
+
+  .stopwatch {
+    width: 100%;
+    max-width: 768px;
+    padding: 80px 0;
+    gap: 40px;
+  }
+
+  .stopwatch-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 477px;
+    gap: 24px;
+  }
+
+  .stopwatch-title h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 43.52px;
+    text-align: center;
+  }
+
+  .stopwatch-title p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  #counter {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 69.63px;
+    text-align: center;
+  }
+
+  #img-counter {
+    width: 478px;
+    height: 307px;
+  }
+
+  /* ==========End section stopwatch=========*/
+
+  .donate {
+    width: 100%;
+    max-width: 768px;
+    padding: 80px 24px;
+    gap: 48px;
+  }
+
+  #img-donate {
+    width: 408px;
+    height: 394px;
+  }
+
+  .donate-group {
+    width: 602px;
+    gap: 40px;
+  }
+
+  .donate-group h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .donate-group p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+  }
+
+
+   /* ==========End section donate=========*/
+
+
+
+  footer {
+    width: 100%;
+    max-width:768px;
+    gap: 32px;
+    padding: 48px 24px;
+    background: #ffe9e8;
+  }
+
+  .social-media {
+    width: 344px;
+    height: 40px;
+    gap: 36px;
+  }
+
+  
+}
