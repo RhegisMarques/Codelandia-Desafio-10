@@ -67,7 +67,13 @@ button {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  cursor: pointer;
   background: #cd3c32;
+}
+
+button:hover {
+  opacity: 0.8;
+  background: #000000;
 }
 
 #img-header {
@@ -133,7 +139,6 @@ button {
   max-width: 375px;
   padding: 80px 24px;
   gap: 48px;
-  border-top: 1px solid #dbdbdb;
 }
 
 #img-donate {
@@ -151,8 +156,6 @@ button {
 }
 
 .donate-group h1 {
-  width: 327px;
-  height: 114px;
 
   font-family: Archivo;
   font-size: 32px;
@@ -162,8 +165,6 @@ button {
 }
 
 .donate-group p {
-  width: 327px;
-  height: 189px;
 
   font-family: Archivo;
   font-size: 18px;
@@ -225,7 +226,7 @@ footer {
 
 /* ================End Mobile=============*/
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .header {
     width: 100%;
     max-width: 768px;
@@ -323,7 +324,6 @@ footer {
 
   .donate-group {
     width: 602px;
-    gap: 40px;
   }
 
   .donate-group h1 {
@@ -338,16 +338,14 @@ footer {
     font-weight: 400;
     line-height: 36px;
     text-align: center;
+    gap: 40px;
   }
 
-
-   /* ==========End section donate=========*/
-
-
+  /* ==========End section donate=========*/
 
   footer {
     width: 100%;
-    max-width:768px;
+    max-width: 768px;
     gap: 32px;
     padding: 48px 24px;
     background: #ffe9e8;
@@ -358,6 +356,88 @@ footer {
     height: 40px;
     gap: 36px;
   }
+}
 
+@media (min-width: 1920px) {
+  .header {
+    display: flex;
+    flex-direction: row;  
+    width: 100%;
+    max-width: 1920px;
+    padding: 104px 357px;
+  } 
+
+  .header-group {
+    display: flex;
+    max-width: 590px;    
+    height: 339px;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .header-group h1 {
+    text-align: left;
+  }
+
+  .header-group p {
+    text-align: left;
+  }
+
+  button {
+    width: 238px;
+    border-radius: 4px;
+    gap: 8px;
+  }
+
+  #img-header {
+    width: 500px;
+    height: 339px;
+  }
+
+  /* ================End Header =============*/
+
+  .stopwatch {
+    display: flex;
+    max-width: 1920px;
+    padding: 104px 357px;
+  }
+
+  /* ==========End section stopwatch=========*/
+
+  .donate {
+    display: flex;
+    flex-direction: row;
+    max-width: 1920px;
+    padding: 104px 357px;
+    gap: 206px;
+  }
+
+  .donate-group{
+    align-items: flex-start;
+  }
+
+  .donate-group h1 {
+    text-align: left;
+  }
+
+  .donate-group p {
+    text-align: left;
+  }
+
+  /* ==========End section donate=========*/
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1920px;    
+    padding: 20px 352px;
+  }
+
+  .footer-group {
+    width: 1216px;
+    height: 40px;
+    
+  }
   
 }
