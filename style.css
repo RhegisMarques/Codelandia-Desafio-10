@@ -2,11 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 375px;
   padding: 96px 24px;
   gap: 64px;
-
   background: #ffe9e8;
 }
 
@@ -14,7 +11,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 327px;
   gap: 40px;
 }
 
@@ -37,7 +33,7 @@
 }
 
 .header-group h1 {
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 600;
   line-height: 38.4px;
   text-align: center;
@@ -55,7 +51,7 @@
 }
 
 button {
-  width: 327px;
+  width: 100%;
   padding: 16px 32px;
   gap: 8px;
   border-radius: 4px;
@@ -78,7 +74,6 @@ button:hover {
 
 #img-header {
   width: 326px;
-  height: 222px;
 }
 
 /* ================End Header=============*/
@@ -88,7 +83,6 @@ button:hover {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 375px;
   padding: 80px 24px;
   gap: 24px;
 }
@@ -126,7 +120,6 @@ button:hover {
 
 #img-counter {
   width: 326px;
-  height: 209px;
 }
 
 /* ================End section stopwatch=============*/
@@ -136,14 +129,12 @@ button:hover {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 375px;
   padding: 80px 24px;
   gap: 48px;
 }
 
 #img-donate {
   width: 214px;
-  height: 207px;
 }
 
 .donate-group {
@@ -151,13 +142,10 @@ button:hover {
   flex-direction: column;
   align-items: center;
   width: 327px;
-  height: 418px;
   gap: 40px;
 }
 
 .donate-group h1 {
-
-  font-family: Archivo;
   font-size: 32px;
   font-weight: 600;
   line-height: 38.4px;
@@ -165,8 +153,6 @@ button:hover {
 }
 
 .donate-group p {
-
-  font-family: Archivo;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -180,7 +166,6 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 375px;
   gap: 32px;
   padding: 48px 24px;
   background: #ffe9e8;
@@ -189,8 +174,6 @@ footer {
 .footer-group {
   display: flex;
   flex-direction: row;
-  width: 160px;
-  height: 38px;
   gap: 12px;
 }
 
@@ -200,9 +183,7 @@ footer {
 }
 
 .footer-group h2 {
-  width: 113px;
   height: 26px;
-  font-family: Archivo;
   font-size: 24px;
   font-weight: 500;
   line-height: 26.11px;
@@ -226,218 +207,124 @@ footer {
 
 /* ================End Mobile=============*/
 
-@media (min-width: 720px) {
+
+@media (min-width: 640px) {
+
   .header {
-    width: 100%;
-    max-width: 768px;
-    padding: 96px 90px;
-    gap: 126px;
-  }
-
-  .header-group {
-    width: 100%;
-    max-width: 568px;
-  }
-
-  .header-group h1 {
-    font-family: Archivo;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 48px;
-    text-align: center;
-  }
-
-  .header-group p {
-    font-family: Archivo;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-  }
-
-  button {
-    width: 238px;
-    gap: 8px;
-  }
-
-  #img-header {
-    width: 500px;
-    height: 339px;
-  }
-
-  /* ================End Header =============*/
-
-  .stopwatch {
-    width: 100%;
-    max-width: 768px;
-    padding: 80px 0;
-    gap: 40px;
-  }
-
-  .stopwatch-title {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 477px;
-    gap: 24px;
-  }
+      flex-direction: column;
+      align-items: center;
 
-  .stopwatch-title h1 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 43.52px;
-    text-align: center;
-  }
+    .header-group h1 {
+      width: 492px;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 48px;
+    }
 
-  .stopwatch-title p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-  }
+    .header-group p {
+      width: 590px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px;
+    }
 
-  #counter {
-    font-size: 64px;
-    font-weight: 600;
-    line-height: 69.63px;
-    text-align: center;
-  }
+    button {
+      width: 238px;
+      padding: 14px 32px;
 
-  #img-counter {
-    width: 478px;
-    height: 307px;
-  }
+    }
 
-  /* ==========End section stopwatch=========*/
+    #img-header {
+      width: 500px;
+    }
 
-  .donate {
-    width: 100%;
-    max-width: 768px;
-    padding: 80px 24px;
-    gap: 48px;
-  }
 
-  #img-donate {
-    width: 408px;
-    height: 394px;
-  }
-
-  .donate-group {
-    width: 602px;
-  }
-
-  .donate-group h1 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 48px;
-    text-align: center;
-  }
-
-  .donate-group p {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-    gap: 40px;
-  }
-
-  /* ==========End section donate=========*/
-
-  footer {
-    width: 100%;
-    max-width: 768px;
-    gap: 32px;
-    padding: 48px 24px;
-    background: #ffe9e8;
-  }
-
-  .social-media {
-    width: 344px;
-    height: 40px;
-    gap: 36px;
   }
 }
 
-@media (min-width: 1920px) {
-  .header {
-    display: flex;
-    flex-direction: row;  
-    width: 100%;
-    max-width: 1920px;
-    padding: 104px 357px;
-  } 
-
-  .header-group {
-    display: flex;
-    max-width: 590px;    
-    height: 339px;
-    align-items: flex-start;
-    gap: 25px;
-  }
-
-  .header-group h1 {
-    text-align: left;
-  }
-
-  .header-group p {
-    text-align: left;
-  }
-
-  button {
-    width: 238px;
-    border-radius: 4px;
-    gap: 8px;
-  }
-
-  #img-header {
-    width: 500px;
-    height: 339px;
-  }
-
-  /* ================End Header =============*/
-
   .stopwatch {
-    display: flex;
-    max-width: 1920px;
-    padding: 104px 357px;
-  }
 
-  /* ==========End section stopwatch=========*/
+    .stopwatch-title {
+      width: 477px;
+      height: 128px;
+
+      h1 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 43.52px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+    }
+
+    #counter{
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 69.63px;
+    }
+
+    #img-counter{
+      width: 478px;
+        height: 307px;
+    }
+
+
+  }
 
   .donate {
+    #img-donate {
+      width: 408px;
+    }
+
+    .donate-group {
+      width: 602px;
+
+      h1{
+        width: 488px;
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 48px;
+          text-align: center;
+      }
+
+      p{
+        font-family: Archivo;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 36px;
+      }
+
+      .donate-btn{
+        width: 238px;
+          padding: 14px 32px ;
+      }
+  }
+
+
+
+
+
+
+}
+
+
+@media (min-width: 1024px){
+  .header{
     display: flex;
     flex-direction: row;
-    max-width: 1920px;
-    padding: 104px 357px;
-    gap: 206px;
-  }
-
-  .donate-group{
-    align-items: flex-start;
-  }
-
-  .donate-group h1 {
-    text-align: left;
-  }
-
-  .donate-group p {
-    text-align: left;
-  }
-
-  /* ==========End section donate=========*/
-
-  footer {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1920px;    
-    padding: 20px 352px;
-  }
-
-  .footer-group {
-    width: 1216px;
-    height: 40px;
+    justify-content: center;
     
+
+    .header-group{
+      justify-content: space-between;
+      
+    }
   }
+
   
 }
