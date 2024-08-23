@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Archivo", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
 .header {
   display: flex;
   flex-direction: column;
@@ -75,7 +93,6 @@ button:hover {
 #img-header {
   width: 326px;
 }
-/* ================End Header=============*/
 
 .stopwatch {
   display: flex;
@@ -120,7 +137,6 @@ button:hover {
   width: 326px;
 }
 
-/* ================End section stopwatch=============*/
 
 .donate {
   display: flex;
@@ -157,7 +173,6 @@ button:hover {
   text-align: center;
 }
 
-/* ================End Section donate=============*/
 
 footer {
   display: flex;
@@ -201,17 +216,15 @@ footer {
   padding: 2px 1px;
   border-radius: 999px;
   background: #ffd5d3;
-}
-
-/* ================End Mobile=============*/
+}/* ================End Mobile=============*/
 
 
 @media (min-width: 640px) {
 
   .header {
     display: flex;
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
 
     .header-group h1 {
       width: 492px;
@@ -230,16 +243,13 @@ footer {
     button {
       width: 238px;
       padding: 14px 32px;
-
     }
 
     #img-header {
       width: 500px;
     }
-
-
   }
-}
+
 
   .stopwatch {
 
@@ -260,18 +270,16 @@ footer {
       }
     }
 
-    #counter{
-        font-size: 64px;
-        font-weight: 600;
-        line-height: 69.63px;
+    #counter {
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 69.63px;
     }
 
-    #img-counter{
+    #img-counter {
       width: 478px;
-        height: 307px;
+      height: 307px;
     }
-
-
   }
 
   .donate {
@@ -282,47 +290,68 @@ footer {
     .donate-group {
       width: 602px;
 
-      h1{
+      h1 {
         width: 488px;
-          font-size: 40px;
-          font-weight: 600;
-          line-height: 48px;
-          text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 48px;
+        text-align: center;
       }
 
-      p{
+      p {
         font-family: Archivo;
-          font-size: 24px;
-          font-weight: 400;
-          line-height: 36px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
       }
 
-      .donate-btn{
+      .donate-btn {
         width: 238px;
-          padding: 14px 32px ;
+        padding: 14px 32px;
       }
+    }
   }
+}/* ================End Tablet=============*/
 
-
-
-
-
-
-}
-
-
-@media (min-width: 1024px){
-  .header{
+@media (min-width: 1024px) {
+  .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 
-    .header-group{
+    .header-group {
       justify-content: space-between;
-      
+      gap: 24px;
+      align-items: flex-start;
+
+      h1, p {
+        text-align: left;
+      }
     }
   }
 
-  
-}
+  .donate {
+    flex-direction: row;
+    justify-content: center;
+    gap: 206px;
+
+
+    .donate-group {
+      align-items: flex-start;
+
+      h1, p{
+        text-align: left;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 712px;
+    height: 80px;
+  }
+
+
+}/* ================End Desktop=============*/
