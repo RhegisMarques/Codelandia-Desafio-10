@@ -43,25 +43,28 @@ a {
   height: 38px;
 }
 
-.header-logo h2 {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 26.11px;
-  text-align: left;
-}
+.header-logo {
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26.11px;
+    text-align: left;
+  }
 
-.header-group h1 {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 38.4px;
-  text-align: center;
-}
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+    text-align: center;
+  }
 
-.header-group p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: center;
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+  }
+
 }
 
 .header-group span {
@@ -216,7 +219,9 @@ footer {
   padding: 2px 1px;
   border-radius: 999px;
   background: #ffd5d3;
-}/* ================End Mobile=============*/
+}
+
+/* ================End Mobile=============*/
 
 
 @media (min-width: 640px) {
@@ -311,7 +316,9 @@ footer {
       }
     }
   }
-}/* ================End Tablet=============*/
+}
+
+/* ================End Tablet=============*/
 
 @media (min-width: 1024px) {
   .header {
@@ -324,7 +331,8 @@ footer {
       gap: 24px;
       align-items: flex-start;
 
-      h1, p {
+      h1,
+      p {
         text-align: left;
       }
     }
@@ -339,7 +347,8 @@ footer {
     .donate-group {
       align-items: flex-start;
 
-      h1, p{
+      h1,
+      p {
         text-align: left;
       }
     }
@@ -354,4 +363,6 @@ footer {
   }
 
 
-}/* ================End Desktop=============*/
+}
+
+/* ================End Desktop=============*/
